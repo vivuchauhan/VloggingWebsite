@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#canvas {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 95%;
+    height: 95vh;
+    border: 20px solid brown;
+}
+
+.nav {
+    width: 60%;
+    height: 50px;
+    position: fixed;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background: linear-gradient(to right, #0f3fde, #d93ede);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid brown;
+}
+.nav1{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px;
+}
+
+.nav2{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px;
+
+}
+
+.nav div,
+button,
+input {
+    margin: 5px;
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+buttton:hover {
+    cursor: pointer;
+}
+
+.clr {
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid brown;
+    transition: transform .5s;
+}
+
+.clr:hover {
+    transform: scale(1.2);
+}
+
+.clr:nth-child(1) {
+    background-color: #000;
+}
+
+.clr:nth-child(2) {
+    background-color: red;
+}
+
+.clr:nth-child(3) {
+    background-color: orange;
+}
+
+.clr:nth-child(4) {
+    background-color: blue;
+}
+
+.clr:nth-child(5) {
+    background-color: purple;
+}
+
+.clr:nth-child(6) {
+    background-color: yellowgreen;
+}
+
+.clr:nth-child(7) {
+    background-color: yellow;
+}
+
+.clr:nth-child(8) {
+    background-color: #fff;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: .6em 1em;
+    border-radius: 3px;
+    background-color: #33CC00;
+    color: #F0F8FF;
+    border: 3px solid brown;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 40px;
+    border: 3px solid brown;
+    border-radius: 3px;
+}
+
+#ageOutputId {
+    color: #F0F8FF;
+    font-weight: bold;
+    font-size: 15pt;
+}
+.nav div,
+button,
+input {
+    margin: 5px;
+}
+
+#ageInputId {
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
+    height: 7px;
+    outline: none;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    border-radius: 5px;
+    border: 3px solid brown;
+    accent-color: #F0F8FF;
+}
+
+.emoji {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:600px) {
+    #canvas {
+        display: block;
+        height: 95vh;
+        width: 97.5%;
+        margin: 0;
+        padding: 0;
+        border: 5px solid brown;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height:70px;
+        margin: 0;
+        padding: 0px;
+        top: 0%;
+    }
+    .nav1{
+        padding: 10px;
+        width: 85%;
+        height: 50px;
+     }
+     
+    .nav2{
+        width: 90%;
+        padding: 10px;
+     
+     }
+    .clr {
+        height: 20px;
+        width: 85%;
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        padding: 0px;
+        border-radius: 3px;
+        border: 1px solid brown;
+        font-size: 11px;
+        font-weight: 200;
+        height: 22px;
+        width: 70%;
+    }
+    input[type="color"] {
+        width: 45%;
+        height: 25px;
+    }
+    
+    #ageOutputId {
+        font-size: 10pt;
+    }
+    
+    #ageInputId {
+        height: 10px;
+        width: 70%;
+        margin-top: 5px;
+        padding:0px;
+        margin-right: 10px;
+    }
+    .emoji {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:820px) {
+    #canvas {
+        display: block;
+        height: 95vh;
+        width: 98.5%;
+        margin: 0;
+        padding: 0;
+        border: 5px solid brown;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        height:100px;
+        margin: 0;
+        padding: 0px;
+        top: 87%;
+    }
+    .nav1{
+        padding: 10px;
+        width: 95%;
+        height: 50px;
+     }
+     
+    .nav2{
+        width: 95%;
+        padding: 10px;
+     
+     }
+    .clr {
+        height: 40px;
+        width: 7%;
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        padding: 0px;
+        border-radius: 3px;
+        border: 3px solid brown;
+        font-size: 25px;
+        font-weight: 200;
+        height: 40px;
+        width: 60%;
+    }
+    input[type="color"] {
+        width: 35%;
+        height: 40px;
+    }
+    
+    #ageOutputId {
+        font-size: 20pt;
+    }
+    
+    #ageInputId {
+        height: 30px;
+        width: 60%;
+        margin-top: 5px;
+        padding:0px;
+        margin-right: 10px;
+    }
+    .emoji {
+        display: none;
+    }
+    
+}
